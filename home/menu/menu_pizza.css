@@ -1,0 +1,234 @@
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 750px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.slidecontainer{
+	overflow-x: hidden;
+	perspective: 1px;
+	transform-style:preserve-3d;
+	height: 100%;
+	overflow-y: s
+
+}
+
+h2{
+	background-color: #ffb6c1;
+	color: black;
+	font-size: 150%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 25px;
+	margin-right: 75px;
+	margin-left: 75px;
+	font-weight: lighter;
+	text-align: center;
+
+
+
+}
+
+
+body{
+	font-size: 20px;
+	background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+	color: white;
+	
+	margin:0;
+	padding: 0;
+	
+	}
+
+h1{
+	background-color:  #ff00aa;
+	color: #fff;
+	font-size: 350%;
+	word-spacing: 3px;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: center;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    margin-bottom:30px;
+    width: 500px;
+    margin-top:30px;
+    padding: 5px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+    padding-left: 100px;
+    margin-left: 200px;
+	line-height:5px;
+}
+
+
+/**.button{
+	margin-top:15px;
+	margin-bottom:25px;
+	padding: 0;
+	font-family:Fira Sans;
+	font-size:95%;
+	width:120px;
+	height:50px;
+	margin-left:600px;
+	background-color:#D634D3;
+	text-align:center;
+}
+*/
+/*#btn{
+	background-color:red;
+}*/
+
+/*.button:hover{
+	background-color:#E76EE5;
+}*/
+
+#p01{
+	height:25px;
+	margin-left:630px;
+}
+
+h4{
+	margin-left:670px;
+}
+
+.data{
+	float:right;
+	margin-right:100px;
+}
+
+.pic{
+
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:20px;
+	float:left;
+
+}
+.pics {
+    width: 300px;
+    height: 200px;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:150px;
+	float:left;
+    background-color: red;
+	animation-iteration-count: 12;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 6s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-image: url("https://images-gmi-pmc.edge-generalmills.com/4cb4c043-e72c-49cf-ba90-99bc4e76cd7b.jpg");background-size:contain;};
+    to {background-image: url("https://www.simplyrecipes.com/wp-content/uploads/2007/01/basic-tomato-sauce-horiz-a-1200.jpg"),background:contain;};
+}
+
+/* Standard syntax */
+@keyframes example {
+ from {background-image: url("https://images-gmi-pmc.edge-generalmills.com/4cb4c043-e72c-49cf-ba90-99bc4e76cd7b.jpg");background-size: contain;};
+     to {background-image: url("https://www.simplyrecipes.com/wp-content/uploads/2007/01/basic-tomato-sauce-horiz-a-1200.jpg"),background:contain;};
+
+}
